@@ -1,12 +1,13 @@
 package com.test.test;
 
-import java.io.File;
-import java.io.IOException;
-import java.io.StringWriter;
 import org.jdom.Document;
 import org.jdom.input.SAXBuilder;
 import org.jdom.output.Format;
 import org.jdom.output.XMLOutputter;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.StringWriter;
 /**
  * 读取一个xml文件返回string
  * @author lmb
@@ -38,10 +39,12 @@ public class MyXmlUtil {
         document=load();
 
         Format format =Format.getPrettyFormat();
-        format.setEncoding("UTF-8");//设置编码格式
-
-        StringWriter out=null; //输出对象
-        String sReturn =""; //输出字符串
+        //设置编码格式
+        format.setEncoding("UTF-8");
+        //输出对象
+        StringWriter out=null;
+        //输出字符串
+        String sReturn ="";
         XMLOutputter outputter =new XMLOutputter();
         out=new StringWriter();
         try {
