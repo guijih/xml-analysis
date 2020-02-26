@@ -13,6 +13,9 @@ import java.util.Map;
 
 import static com.test.test.ParseXmlUtil.xml2Json;
 
+/**
+ * @author Administrator
+ */
 public class Test {
     public static void main(String[] args) throws Exception {
         // 获取一个xml文件

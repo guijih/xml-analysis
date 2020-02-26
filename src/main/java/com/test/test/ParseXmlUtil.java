@@ -21,6 +21,38 @@ public class ParseXmlUtil {
 
     public static void main(String[] args) {
 
+        String textFromFile="<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+                "<ROOT>  \n" +
+                "      <HEAD>  \n" +
+                "            <ORIGIN_DOMAIN>kefuxitongbianma</ORIGIN_DOMAIN>  \n" +
+                "            <HOME_DOMAIN>CUGCRM</HOME_DOMAIN>  \n" +
+                "            <ACTION_CODE>1</ACTION_CODE>  \n" +
+                "            <BUSI_CODE>QUERYCUST</BUSI_CODE>  \n" +
+                "            <TRANS_ID>20160220160635123456</TRANS_ID>  \n" +
+                "            <RET_CODE>0000</RET_CODE>  \n" +
+                "            <RET_MSG>success</RET_MSG>  \n" +
+                "      </HEAD>  \n" +
+                "      <BODY>  \n" +
+                "            <TOTAL_RECORDS>20</TOTAL_RECORDS>  \n" +
+                "            <TOTAL_PAGE>10</TOTAL_PAGE>  \n" +
+                "            <CURRENT_PAGE>1</CURRENT_PAGE>  \n" +
+                "            <CUSTINFOLIST>  \n" +
+                "                  <CUSTINFO>  \n" +
+                "                        <CUST_TYPE>001</CUST_TYPE>  \n" +
+                "                        <VIP_FLAG>true</VIP_FLAG>  \n" +
+                "                  </CUSTINFO>  \n" +
+                "                  <CUSTINFO>  \n" +
+                "                        <CUST_TYPE>002</CUST_TYPE>  \n" +
+                "                        <VIP_FLAG>false</VIP_FLAG>  \n" +
+                "                  </CUSTINFO>  \n" +
+                "                  <CUSTINFO>  \n" +
+                "                        <CUST_TYPE>003</CUST_TYPE>  \n" +
+                "                        <VIP_FLAG>false</VIP_FLAG>  \n" +
+                "                  </CUSTINFO>  \n" +
+                "            </CUSTINFOLIST>  \n" +
+                "      </BODY>  \n" +
+                "</ROOT>\n";
+        Map resultMap = ParseXmlUtil.xml2map(textFromFile);
 
 
     }
